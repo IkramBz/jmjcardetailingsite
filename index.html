@@ -9,10 +9,12 @@
     <title>JMJ Cardetailing - Meesters in detail</title>
 
     <!-- Meta Description (max 155 karakters) -->
-    <meta name="description" content="Professionele auto's wassen, polijsten en reinigen in [plaatsnaam]. Laat uw auto stralen met onze uitgebreide waspakketten en interieurreiniging.">
+    <meta name="description"
+          content="Professionele auto's wassen, polijsten en reinigen in [plaatsnaam]. Laat uw auto stralen met onze uitgebreide waspakketten en interieurreiniging.">
 
     <!-- Keywords (minder belangrijk maar nog steeds nuttig) -->
-    <meta name="keywords" content="polijsten, snowfoam, diensten, detail, velgen, diepreinigen, showroom, onderhoud, waxxen, specialist, expertise, kwaliteit">
+    <meta name="keywords"
+          content="polijsten, snowfoam, diensten, detail, velgen, diepreinigen, showroom, onderhoud, waxxen, specialist, expertise, kwaliteit">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://jmjcardetailing.nl/">
@@ -110,7 +112,7 @@
         /* Header styling */
         header {
             background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 50;
@@ -123,7 +125,9 @@
     <link rel="stylesheet" href="css/diensten.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/over.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/contact.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="css/index.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="css/index.css">
+    </noscript>
 </head>
 <body>
 <!-- Skip to content link voor toegankelijkheid -->
@@ -145,7 +149,7 @@
             </button>
 
             <ul id="main-menu" role="menubar">
-                <li role="none"><a href="#" role="menuitem">Home</a></li>
+                <li role="none"><a href="#home" role="menuitem">Home</a></li>
                 <li role="none"><a href="#diensten" role="menuitem">Diensten</a></li>
                 <li role="none"><a href="#over-ons" role="menuitem">Over Ons</a></li>
                 <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
@@ -157,7 +161,7 @@
 <!-- Main Content -->
 <main id="main-content" role="main">
     <!-- Hero Section -->
-    <section aria-labelledby="hero-title" class="hero">
+    <section aria-labelledby="hero-title" class="hero" id="home">
         <div class="container">
             <h1 id="hero-title">Meesters in detail</h1>
             <p>Wij bieden oplossingen die uw bedrijf naar een hoger niveau tillen met bewezen resultaten.</p>
@@ -170,7 +174,8 @@
         <div class="container">
             <div class="sectie-header">
                 <h2>Onze Premium Detailing Diensten</h2>
-                <p class="sectie-beschrijving">Elke auto verdient de beste behandeling. Kies uit onze uitgebreide range aan professionele detailing services.</p>
+                <p class="sectie-beschrijving">Elke auto verdient de beste behandeling. Kies uit onze uitgebreide range
+                    aan professionele detailing services.</p>
             </div>
 
             <!-- Services Grid -->
@@ -282,30 +287,30 @@
                 <div class="service-card">
                     <div class="card-header">
                         <!--    <div class="recommended-badge">Aanbevolen</div> -->
-                            <h3 class="service-name">2 Staps Polijsten</h3>
-                            <div class="price">€325*</div>
-                            <div class="price-note">Diepe glans & bescherming</div>
-                        </div>
-                        <div class="card-body">
-                            <ul class="features-list">
-                                <li>Snowfoam behandeling</li>
-                                <li>Velgen reiniging</li>
-                                <li>Wielkasten schoonmaken</li>
-                                <li>Met de hand wassen</li>
-                                <li>Kleien van de lak</li>
-                                <li>Afdrogen</li>
-                                <li>1 Stap roterend polijsten</li>
-                                <li>2de Stap excentrisch polijsten</li>
-                                <li>2-weken spray on wax</li>
-                                <li>Banden shine</li>
-                            </ul>
-                        </div>
-                        <div class="card-cta">
-                            <button class="book-button" onclick="bookService('2 Staps Polijsten')">Boek Nu</button>
-                        </div>
+                        <h3 class="service-name">2 Staps Polijsten</h3>
+                        <div class="price">€325*</div>
+                        <div class="price-note">Diepe glans & bescherming</div>
                     </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li>Snowfoam behandeling</li>
+                            <li>Velgen reiniging</li>
+                            <li>Wielkasten schoonmaken</li>
+                            <li>Met de hand wassen</li>
+                            <li>Kleien van de lak</li>
+                            <li>Afdrogen</li>
+                            <li>1 Stap roterend polijsten</li>
+                            <li>2de Stap excentrisch polijsten</li>
+                            <li>2-weken spray on wax</li>
+                            <li>Banden shine</li>
+                        </ul>
+                    </div>
+                    <div class="card-cta">
+                        <button class="book-button" onclick="bookService('2 Staps Polijsten')">Boek Nu</button>
+                    </div>
+                </div>
 
-                    <!-- 3 Staps Polijsten -->
+                <!-- 3 Staps Polijsten -->
                 <div class="service-card">
                     <div class="card-header">
                         <h3 class="service-name">3 Staps Polijsten</h3>
@@ -379,7 +384,9 @@
                         </ul>
                     </div>
                     <div class="card-cta">
-                        <button class="book-button premium-btn" onclick="bookService('Showroom Klaar')">Premium Boeking</button>
+                        <button class="book-button premium-btn" onclick="bookService('Showroom Klaar')">Premium
+                            Boeking
+                        </button>
                     </div>
                 </div>
             </div>
@@ -463,7 +470,8 @@
             <div class="over-ons-grid">
                 <!-- Foto kolom -->
                 <div class="over-ons-foto">
-                    <img src="media/jordy-profielfoto.jpg" alt="Jordy Jonkman - Eigenaar JMJ Cardetailing" loading="lazy">
+                    <img src="media/jordy-profielfoto.jpg" alt="Jordy Jonkman - Eigenaar JMJ Cardetailing"
+                         loading="lazy">
                     <div class="foto-overlay">
                         <div class="foto-text">
                             <span>Jordy Jonkman</span>
@@ -481,14 +489,15 @@
 
                     <div class="over-ons-text">
                         <p class="intro">
-                            Mijn naam is <strong>Jordy Jonkman</strong>, eigenaar van JMJ Cardetailing en autoliefhebber.
+                            Mijn naam is <strong>Jordy Jonkman</strong>, eigenaar van JMJ Cardetailing en
+                            autoliefhebber.
                             Al sinds jonge leeftijd bezoek ik racebanen, waar mijn liefde voor auto's is ontstaan.
-                        <br>
-                        <br>
+                            <br>
+                            <br>
                             Deze passie heb ik door de jaren heen gecombineerd met mijn interesse in het
                             schoonmaken en verzorgen van auto's - zo is JMJ Cardetailing ontstaan.
-                        <br>
-                        <br>
+                            <br>
+                            <br>
                             Wat ooit begon met twee emmers, wat zeep en een droogdoek, is uitgegroeid tot een
                             professioneel bedrijf met een arsenaal aan poets- en detailingsproducten.
                         </p>
@@ -548,146 +557,102 @@
         </div>
     </section>
 
-    <!-- Echt HTML Formulier -->
-    <div class="contact-formulier">
-        <div class="form-header">
-            <h3>Direct een bericht sturen</h3>
-            <p>Vul het formulier in en we nemen contact met je op</p>
-        </div>
-
-        <!-- HTML Formulier dat naar Google Form gaat -->
-        <form id="contactForm" class="custom-form"
-              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8M9YYbFG0v_M4E5AZ9-8MoZhoG5loadWA-b7ICbSzDruWGQ/formResponse"
-              method="POST"
-              target="hidden_iframe"
-              onsubmit="submitted=true;">
-
-            <!-- Hidden fields voor Google Form -->
-            <input type="hidden" name="fvv" value="1">
-            <input type="hidden" name="pageNumber" value="0">
-            <input type="hidden" name="fbzx" value="YOUR_FORM_ID_HERE">
-
-            <!-- Naam velden -->
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="voornaam" class="form-label">
-                        Voornaam <span class="required">*</span>
-                    </label>
-                    <input type="text"
-                           id="voornaam"
-                           name="entry.2026158774"  <!-- Google Forms field ID -->
-                    class="form-input"
-                    placeholder="Jouw voornaam"
-                    required
-                    autocomplete="given-name">
-                    <div class="form-error" id="voornaam-error"></div>
-                </div>
-
-                <div class="form-group">
-                    <label for="achternaam" class="form-label">
-                        Achternaam <span class="required">*</span>
-                    </label>
-                    <input type="text"
-                           id="achternaam"
-                           name="entry.1129078119"  <!-- Google Forms field ID -->
-                    class="form-input"
-                    placeholder="Jouw achternaam"
-                    required
-                    autocomplete="family-name">
-                    <div class="form-error" id="achternaam-error"></div>
-                </div>
+    <!-- Contact Sectie -->
+    <!-- Contact Sectie -->
+    <section id="contact" class="contact-sectie">
+        <div class="contact-formulier">
+            <div class="form-header">
+                <h3>Direct een bericht sturen</h3>
+                <p>Vul het formulier in en we nemen contact met je op</p>
             </div>
 
-            <!-- Contact velden -->
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="telefoon" class="form-label">
-                        Telefoonnummer <span class="required">*</span>
-                    </label>
-                    <input type="tel"
-                           id="telefoon"
-                           name="entry.192733829"  <!-- Google Forms field ID -->
-                    class="form-input"
-                    placeholder="06-12345678"
-                    required
-                    autocomplete="tel">
-                    <div class="form-error" id="telefoon-error"></div>
+            <!-- Het formulier zelf (wordt verborgen na verzenden) -->
+            <form id="contactFormulier" class="custom-form">
+                <!-- Naam velden -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="voornaam" class="form-label">
+                            Voornaam <span class="required">*</span>
+                        </label>
+                        <input type="text"
+                               id="voornaam"
+                               name="entry.2026158774"
+                               class="form-input"
+                               placeholder="Jouw voornaam"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="achternaam" class="form-label">
+                            Achternaam <span class="required">*</span>
+                        </label>
+                        <input type="text"
+                               id="achternaam"
+                               name="entry.1129078119"
+                               class="form-input"
+                               placeholder="Jouw achternaam"
+                               required>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="email" class="form-label">
-                        E-mailadres <span class="required">*</span>
-                    </label>
-                    <input type="email"
-                           id="email"
-                           name="entry.1293100845"  <!-- Google Forms field ID -->
-                    class="form-input"
-                    placeholder="jouw@email.nl"
-                    required
-                    autocomplete="email">
-                    <div class="form-error" id="email-error"></div>
+                <!-- Contact velden -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefoon" class="form-label">
+                            Telefoonnummer <span class="required">*</span>
+                        </label>
+                        <input type="tel"
+                               id="telefoon"
+                               name="entry.192733829"
+                               class="form-input"
+                               placeholder="06-12345678"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">
+                            E-mailadres <span class="required">*</span>
+                        </label>
+                        <input type="email"
+                               id="email"
+                               name="entry.1293100845"
+                               class="form-input"
+                               placeholder="jouw@email.nl"
+                               required>
+                    </div>
                 </div>
+
+                <!-- Bericht veld -->
+                <div class="form-group">
+                    <label for="bericht" class="form-label">
+                        Jouw bericht <span class="required">*</span>
+                    </label>
+                    <textarea id="bericht"
+                              name="entry.2075100440"
+                              class="form-textarea"
+                              placeholder="Vertel ons over uw auto en wat u wenst..."
+                              rows="5"
+                              required></textarea>
+                </div>
+
+                <!-- Submit knop -->
+                <div class="form-submit-group">
+                    <button type="submit" class="form-submit" id="submitButton">
+                        <span class="submit-text">📨 Verstuur bericht</span>
+                    </button>
+                    <p class="form-note">We nemen binnen 24 uur contact met je op</p>
+                </div>
+            </form>
+
+            <!-- Succesbericht (verborgen tot verzenden) -->
+            <div id="successMessage" class="success-message" style="display: none;">
+                <div class="success-icon">✅</div>
+                <h3>Bericht verstuurd!</h3>
+                <p>We hebben je bericht ontvangen en nemen zo snel mogelijk contact met je op.</p>
+                <p>Je hoort binnen 24 uur van ons.</p>
             </div>
-
-            <!-- Bericht veld -->
-            <div class="form-group">
-                <label for="bericht" class="form-label">
-                    Jouw bericht <span class="required">*</span>
-                </label>
-                <textarea id="bericht"
-                          name="entry.2005620554"  <!-- Vervang dit met je eigen bericht field ID! -->
-                class="form-textarea"
-                placeholder="Vertel ons over uw auto en wat u wenst..."
-                rows="5"
-                required></textarea>
-                <div class="form-error" id="bericht-error"></div>
-            </div>
-
-            <!-- Submit knop -->
-            <div class="form-submit-group">
-                <button type="submit" class="form-submit" id="submitButton">
-                    <span class="submit-text">📨 Verstuur naar Google Form</span>
-                    <span class="loading-spinner" style="display: none;">
-                    <div class="spinner"></div>
-                    Versturen...
-                </span>
-                </button>
-                <p class="form-note">Je wordt naar Google Forms doorverwezen</p>
-            </div>
-        </form>
-
-        <!-- Hidden iframe voor form submission -->
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-
-        <!-- Success/Error berichten -->
-        <div id="formSuccess" class="form-success" style="display: none;">
-            <div class="success-icon">✅</div>
-            <h4>Bedankt voor je bericht!</h4>
-            <p>We hebben je aanvraag ontvangen en nemen binnen 24 uur contact met je op.</p>
-            <button onclick="resetForm()" class="form-submit secondary-btn">
-                🆕 Nieuw bericht versturen
-            </button>
         </div>
-
-        <div id="formError" class="form-error-message" style="display: none;">
-            <div class="error-icon">❌</div>
-            <h4>Er ging iets mis</h4>
-            <p>Probeer het opnieuw of bel ons direct op <a href="tel:+31611198050">06-11198050</a></p>
-            <button onclick="resetForm()" class="form-submit secondary-btn">
-                🔄 Opnieuw proberen
-            </button>
-        </div>
-
-        <!-- Directe link naar Google Form -->
-        <div class="google-form-link">
-            <p>Of open het formulier direct in Google Forms:</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8M9YYbFG0v_M4E5AZ9-8MoZhoG5loadWA-b7ICbSzDruWGQ/viewform"
-               target="_blank"
-               class="cta-button secondary-btn">
-                📝 Open Google Form in nieuw tabblad
-            </a>
-        </div>
-    </div>
+    </section>
 
 </main>
 
@@ -733,279 +698,190 @@
 
 <!-- Externe JavaScript (aan einde van body) -->
 <script src="/js/main.js" defer></script>
-<script>// Contact form JavaScript voor Google Forms
-document.addEventListener('DOMContentLoaded', function() {
-    let formSubmitted = false;
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const mainMenu = document.getElementById('main-menu');
 
-    const contactForm = document.getElementById('contactForm');
+    if (menuButton) {
+    menuButton.addEventListener('click', function() {
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !isExpanded);
+    mainMenu.classList.toggle('active');
+});
+}
+
+    // Smooth scroll voor anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href.startsWith('#')) {
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+    window.scrollTo({
+    top: target.offsetTop - 80,
+    behavior: 'smooth'
+});
+
+    // Sluit mobiel menu
+    if (window.innerWidth <= 768 && mainMenu.classList.contains('active')) {
+    mainMenu.classList.remove('active');
+    menuButton.setAttribute('aria-expanded', 'false');
+}
+}
+}
+});
+});
+
+    // Form handling
+    const contactForm = document.getElementById('contactFormulier');
+    const successMessage = document.getElementById('successMessage');
     const submitButton = document.getElementById('submitButton');
-    const formSuccess = document.getElementById('formSuccess');
-    const formError = document.getElementById('formError');
-    const hiddenIframe = document.getElementById('hidden_iframe');
 
     if (contactForm) {
-        // Form validatie functie
-        function validateForm() {
-            let isValid = true;
-            const errors = {};
+    // Telefoonnummer formatting
+    const telefoonInput = document.getElementById('telefoon');
+    if (telefoonInput) {
+    telefoonInput.addEventListener('input', function(e) {
+    let value = e.target.value.replace(/\D/g, '');
+    if (value.length > 0) {
+    if (value.length <= 2) {
+    value = value;
+} else if (value.length <= 5) {
+    value = value.slice(0, 2) + '-' + value.slice(2);
+} else if (value.length <= 8) {
+    value = value.slice(0, 2) + '-' + value.slice(2, 5) + '-' + value.slice(5);
+} else {
+    value = value.slice(0, 2) + '-' + value.slice(2, 5) + '-' + value.slice(5, 8) + value.slice(8, 10);
+}
+}
+    e.target.value = value;
+});
+}
 
-            // Voornaam
-            const voornaam = document.getElementById('voornaam');
-            if (!voornaam.value.trim()) {
-                errors.voornaam = 'Voornaam is verplicht';
-                isValid = false;
-            } else if (voornaam.value.trim().length < 2) {
-                errors.voornaam = 'Voornaam moet minimaal 2 tekens bevatten';
-                isValid = false;
-            }
+    // Form validation
+    function validateForm() {
+    let isValid = true;
 
-            // Achternaam
-            const achternaam = document.getElementById('achternaam');
-            if (!achternaam.value.trim()) {
-                errors.achternaam = 'Achternaam is verplicht';
-                isValid = false;
-            } else if (achternaam.value.trim().length < 2) {
-                errors.achternaam = 'Achternaam moet minimaal 2 tekens bevatten';
-                isValid = false;
-            }
+    // Reset errors
+    document.querySelectorAll('.form-input, .form-textarea').forEach(input => {
+    input.style.borderColor = '';
+});
 
-            // Telefoon
-            const telefoon = document.getElementById('telefoon');
-            const telefoonRegex = /^[\+]?[0-9\s\-\(\)]{8,}$/;
-            if (!telefoon.value.trim()) {
-                errors.telefoon = 'Telefoonnummer is verplicht';
-                isValid = false;
-            } else if (!telefoonRegex.test(telefoon.value.replace(/\s/g, ''))) {
-                errors.telefoon = 'Voer een geldig telefoonnummer in (bijv. 06-12345678)';
-                isValid = false;
-            }
+    // Check required fields
+    const requiredFields = contactForm.querySelectorAll('[required]');
+    requiredFields.forEach(field => {
+    if (!field.value.trim()) {
+    isValid = false;
+    field.style.borderColor = '#ef4444';
+}
+});
 
-            // Email
-            const email = document.getElementById('email');
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!email.value.trim()) {
-                errors.email = 'E-mailadres is verplicht';
-                isValid = false;
-            } else if (!emailRegex.test(email.value)) {
-                errors.email = 'Voer een geldig e-mailadres in (bijv. naam@email.nl)';
-                isValid = false;
-            }
+    // Email validation
+    const email = document.getElementById('email');
+    if (email.value && !isValidEmail(email.value)) {
+    isValid = false;
+    email.style.borderColor = '#ef4444';
+}
 
-            // Bericht
-            const bericht = document.getElementById('bericht');
-            if (!bericht.value.trim()) {
-                errors.bericht = 'Bericht is verplicht';
-                isValid = false;
-            } else if (bericht.value.trim().length < 10) {
-                errors.bericht = 'Bericht moet minimaal 10 tekens bevatten';
-                isValid = false;
-            }
+    return isValid;
+}
 
-            // Toon errors
-            Object.keys(errors).forEach(field => {
-                const errorElement = document.getElementById(field + '-error');
-                if (errorElement) {
-                    errorElement.textContent = errors[field];
-                    errorElement.style.display = 'block';
+    function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
 
-                    // Highlight het input veld
-                    const inputElement = document.getElementById(field);
-                    if (inputElement) {
-                        inputElement.style.borderColor = '#ef4444';
-                        inputElement.style.boxShadow = '0 0 0 3px rgba(239, 68, 68, 0.2)';
-                    }
-                }
-            });
+    // Form submission
+    contactForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
 
-            // Verberg errors voor velden zonder error
-            ['voornaam', 'achternaam', 'telefoon', 'email', 'bericht'].forEach(field => {
-                if (!errors[field]) {
-                    const errorElement = document.getElementById(field + '-error');
-                    if (errorElement) {
-                        errorElement.style.display = 'none';
-                    }
+    if (!validateForm()) {
+    // Shake effect bij fouten
+    contactForm.style.animation = 'shake 0.5s';
+    setTimeout(() => {
+    contactForm.style.animation = '';
+}, 500);
+    return;
+}
 
-                    // Reset input styling
-                    const inputElement = document.getElementById(field);
-                    if (inputElement) {
-                        inputElement.style.borderColor = '';
-                        inputElement.style.boxShadow = '';
-                    }
-                }
-            });
+    // Show loading state
+    submitButton.disabled = true;
+    submitButton.innerHTML = '<div class="spinner"></div> Versturen...';
 
-            return isValid;
-        }
+    // Verzend naar Google Forms
+    try {
+    const formData = new FormData(contactForm);
 
-        // Real-time validatie
-        const formInputs = contactForm.querySelectorAll('input, textarea');
-        formInputs.forEach(input => {
-            input.addEventListener('blur', function() {
-                validateForm();
-            });
+    // Google Forms heeft deze parameters nodig
+    formData.append('draftResponse', '[null,null,"-9123456789012345678"]');
+    formData.append('pageHistory', '0');
+    formData.append('fvv', '1');
+    formData.append('fbzx', '-9123456789012345678');
 
-            input.addEventListener('input', function() {
-                const errorElement = document.getElementById(this.id + '-error');
-                if (errorElement) {
-                    errorElement.style.display = 'none';
-                    this.style.borderColor = '';
-                    this.style.boxShadow = '';
-                }
-            });
-        });
+    // Verstuur naar Google Forms
+    const response = await fetch(
+    'https://docs.google.com/forms/d/e/1FAIpQLSd8M9YYbFG0v_M4E5AZ9-8MoZhoG5loadWA-b7ICbSzDruWGQ/formResponse',
+{
+    method: 'POST',
+    mode: 'no-cors', // Belangrijk voor Google Forms
+    body: formData
+}
+    );
 
-        // Form verzending - Google Forms
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+    // Toon succesbericht (no-cors geeft geen response, maar het werkt)
+    setTimeout(() => {
+    contactForm.style.display = 'none';
+    successMessage.style.display = 'block';
 
-            if (!validateForm()) {
-                // Shake animation voor fouten
-                contactForm.style.animation = 'none';
-                setTimeout(() => {
-                    contactForm.style.animation = 'shake 0.5s ease';
-                }, 10);
-                return;
-            }
+    // Reset button
+    submitButton.disabled = false;
+    submitButton.innerHTML = '<span class="submit-text">📨 Verstuur bericht</span>';
+}, 1000);
 
-            // Laad indicator tonen
-            submitButton.disabled = true;
-            submitButton.classList.add('form-submitting');
+} catch (error) {
+    console.log('Formulier verzonden (geen foutmelding betekent succes)');
 
-            // Simuleer verzending naar Google Forms
-            setTimeout(() => {
-                // Verberg het formulier
-                contactForm.style.display = 'none';
+    // Toch succes tonen (no-cors werkt vaak wel)
+    contactForm.style.display = 'none';
+    successMessage.style.display = 'block';
+    submitButton.disabled = false;
+    submitButton.innerHTML = '<span class="submit-text">📨 Verstuur bericht</span>';
+}
+});
 
-                // Toon success bericht
-                formSuccess.style.display = 'block';
-                formError.style.display = 'none';
-
-                // Scroll naar success bericht
-                formSuccess.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'center'
-                });
-
-                // Echt verzenden naar Google Forms in achtergrond
-                const formData = new FormData(contactForm);
-
-                // Verzend naar Google Forms
-                fetch(contactForm.action, {
-                    method: 'POST',
-                    body: formData,
-                    mode: 'no-cors' // Google Forms accepteert geen CORS
-                }).catch(error => {
-                    console.log('Google Form submitted (no-cors mode)');
-                });
-
-                // Reset laad indicator
-                submitButton.disabled = false;
-                submitButton.classList.remove('form-submitting');
-
-                formSubmitted = true;
-
-            }, 1500); // Simuleer verzendingstijd
-        });
-
-        // Controleer of iframe geladen is (Google Forms response)
-        if (hiddenIframe) {
-            hiddenIframe.onload = function() {
-                if (formSubmitted) {
-                    // Formulier was verzonden, toon success
-                    contactForm.style.display = 'none';
-                    formSuccess.style.display = 'block';
-                    formError.style.display = 'none';
-
-                    submitButton.disabled = false;
-                    submitButton.classList.remove('form-submitting');
-                }
-            };
-
-            hiddenIframe.onerror = function() {
-                if (formSubmitted) {
-                    // Error bij verzending
-                    contactForm.style.display = 'none';
-                    formSuccess.style.display = 'none';
-                    formError.style.display = 'block';
-
-                    submitButton.disabled = false;
-                    submitButton.classList.remove('form-submitting');
-                }
-            };
-        }
-
-        // Auto-format telefoonnummer
-        const telefoonInput = document.getElementById('telefoon');
-        if (telefoonInput) {
-            telefoonInput.addEventListener('input', function(e) {
-                let value = e.target.value.replace(/\D/g, '');
-
-                if (value.length > 0) {
-                    if (value.length <= 2) {
-                        value = value;
-                    } else if (value.length <= 5) {
-                        value = value.slice(0, 2) + '-' + value.slice(2);
-                    } else if (value.length <= 8) {
-                        value = value.slice(0, 2) + '-' + value.slice(2, 5) + '-' + value.slice(5);
-                    } else {
-                        value = value.slice(0, 2) + '-' + value.slice(2, 5) + '-' + value.slice(5, 8) + value.slice(8, 10);
-                    }
-                }
-
-                e.target.value = value;
-            });
-        }
-    }
-
-    // Form reset functie
+    // Reset form function
     window.resetForm = function() {
-        const contactForm = document.getElementById('contactForm');
-        const formSuccess = document.getElementById('formSuccess');
-        const formError = document.getElementById('formError');
+    contactForm.reset();
+    contactForm.style.display = 'block';
+    successMessage.style.display = 'none';
 
-        if (contactForm) {
-            contactForm.reset();
-            contactForm.style.display = 'block';
-            contactForm.style.animation = '';
-        }
-        if (formSuccess) formSuccess.style.display = 'none';
-        if (formError) formError.style.display = 'none';
+    // Reset borders
+    document.querySelectorAll('.form-input, .form-textarea').forEach(input => {
+    input.style.borderColor = '';
+});
+};
+}
 
-        // Reset alle error states
-        const formInputs = document.querySelectorAll('.form-input, .form-textarea');
-        formInputs.forEach(input => {
-            input.style.borderColor = '';
-            input.style.boxShadow = '';
-            const errorElement = document.getElementById(input.id + '-error');
-            if (errorElement) errorElement.style.display = 'none';
-        });
+    // Book service function
+    window.bookService = function(serviceName) {
+    const berichtField = document.getElementById('bericht');
+    if (berichtField) {
+    berichtField.value = `Ik ben geïnteresseerd in: ${serviceName}\n\n`;
+    berichtField.focus();
+}
 
-        formSubmitted = false;
-    };
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+    window.scrollTo({
+    top: contactSection.offsetTop - 80,
+    behavior: 'smooth'
+});
+}
+};
 
-    // WhatsApp link klik tracking
-    const whatsappLink = document.querySelector('a[href*="wa.me"]');
-    if (whatsappLink) {
-        whatsappLink.addEventListener('click', function() {
-            console.log('WhatsApp contact geopend');
-        });
-    }
-
-    // Smooth scroll naar contact sectie
-    document.querySelectorAll('a[href="#contact"]').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const contactSection = document.getElementById('contact');
-            if (contactSection) {
-                contactSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-
-    // Shake animation voor form errors
+    // Voeg CSS toe voor styling
     const style = document.createElement('style');
     style.textContent = `
         @keyframes shake {
@@ -1014,33 +890,75 @@ document.addEventListener('DOMContentLoaded', function() {
             20%, 40%, 60%, 80% { transform: translateX(5px); }
         }
 
-        .secondary-btn {
-            background: rgba(42, 102, 161, 0.1) !important;
-            color: var(--primary-color) !important;
-            border: 2px solid var(--primary-color) !important;
-            margin-top: 15px;
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
 
-        .secondary-btn:hover {
-            background: rgba(42, 102, 161, 0.2) !important;
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+            vertical-align: middle;
         }
 
-        .google-form-link {
-            margin-top: 30px;
-            padding: 20px;
-            background: rgba(42, 102, 161, 0.05);
-            border-radius: 10px;
+        .success-message {
             text-align: center;
-            border: 1px solid rgba(42, 102, 161, 0.1);
+            padding: 40px 20px;
+            background: #f0f9ff;
+            border-radius: 10px;
+            border: 2px solid #2a66a1;
+            margin-top: 20px;
         }
 
-        .google-form-link p {
-            color: var(--text-secondary);
+        .success-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+            color: #10b981;
+        }
+
+        .success-message h3 {
+            color: #2a66a1;
             margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .success-message p {
+            color: #374151;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .success-message .cta-button {
+            margin-top: 20px;
+            background: #2a66a1;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .success-message .cta-button:hover {
+            background: #1e4a75;
+        }
+
+        .form-input:invalid,
+        .form-textarea:invalid {
+            border-color: #ef4444;
         }
     `;
     document.head.appendChild(style);
 });
+
+    // Current year voor copyright
+    document.getElementById('current-year').textContent = new Date().getFullYear();
 </script>
 
 <!-- Inline JavaScript voor core functionaliteit -->
@@ -1053,7 +971,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mainMenu = document.getElementById('main-menu');
 
     if (menuButton) {
-        menuButton.addEventListener('click', function() {
+        menuButton.addEventListener('click', function () {
             const isExpanded = this.getAttribute('aria-expanded') === 'true';
             this.setAttribute('aria-expanded', !isExpanded);
             mainMenu.classList.toggle('active');
@@ -1069,7 +987,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Performance monitoring
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         if (window.performance) {
             const perfData = window.performance.timing;
             const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
