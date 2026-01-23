@@ -1,0 +1,183 @@
+/* ==================== */
+/* NAVBAR - ZWART THEMA */
+/* ==================== */
+
+/* Header/navbar styling */
+header {
+    background: #000000;           /* ZWARTE achtergrond */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333; /* Subtiele lijn onderaan */
+}
+
+/* Container binnen header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo styling */
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+/* Navigatiemenu */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigatielinks */
+nav a {
+    color: #ffffff !important;      /* WITTE tekst */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect op links */
+nav a:hover {
+    color: #2a66a1 !important;     /* Oranje bij hover (optioneel) */
+}
+
+/* Underline effect bij hover */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2a66a1;     /* Oranje underline */
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Active link styling */
+nav a[aria-current="page"] {
+    color: #2a66a1 !important;
+    font-weight: 600;
+}
+
+nav a[aria-current="page"]::after {
+    width: 100%;
+    background-color: #2a66a1;
+}
+
+/* Mobile menu button */
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-button:hover {
+    background: #333333;
+    border-color: #2a66a1;
+}
+
+.mobile-menu-button[aria-expanded="true"] {
+    background: #333333;
+    border-color: #2a66a1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .mobile-menu-button {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #000000;
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        border-top: 1px solid #333;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid #333;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+
+    nav a::after {
+        display: none; /* Verwijder underline op mobiel */
+    }
+}
+
+/* =========================== */
+/* EXTRA: DROPDOWN (optioneel) */
+/* =========================== */
+nav li {
+    position: relative;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #000000;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+    border-radius: 0 0 4px 4px;
+}
+
+nav ul ul li {
+    width: 100%;
+}
+
+nav ul ul a {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #333;
+}
+
+nav ul ul a:hover {
+    background: #333333;
+}

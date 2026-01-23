@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <!-- Meta Charset -->
+    <meta charset="UTF-8">
+    <!-- Viewport voor responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titel (max 60 karakters) -->
+    <title>JMJ Cardetailing - Meesters in detail</title>
+
+    <!-- Meta Description (max 155 karakters) -->
+    <meta name="description" content="Professionele auto's wassen, polijsten en reinigen in [plaatsnaam]. Laat uw auto stralen met onze uitgebreide waspakketten en interieurreiniging.">
+
+    <!-- Keywords (minder belangrijk maar nog steeds nuttig) -->
+    <meta name="keywords" content="polijsten, snowfoam, diensten, detail, velgen, diepreinigen, showroom, onderhoud, waxxen, specialist, expertise, kwaliteit">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jmjcardetailing.nl/">
+
+    <!-- Open Graph voor social media -->
+    <meta property="og:title" content="JMJ Cardetailing - Meesters in detail">
+    <meta property="og:description" content="Ontdek onze professionele diensten">
+    <meta property="og:image" content="media/redstation.png">
+    <meta property="og:url" content="https://jmjcardetailing.nl/">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="media/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/logo.png">
+
+    <!-- Preconnect voor snellere resource loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Externe fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "JMJ Cardetailing",
+            "description": "Meesters in detail",
+            "url": "https://jmjcardetailing.nl/",
+            "telephone": "+31611198050",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Voorbeeldstraat 123",
+                "addressLocality": "Amsterdam",
+                "postalCode": "1234 AB",
+                "addressCountry": "NL"
+            },
+            "sameAs": [
+                "https://facebook.com/voorbeeld",
+                "https://linkedin.com/company/voorbeeld"
+            ]
+        }
+    </script>
+
+    <!-- Critical CSS (inline voor snellere rendering) -->
+    <style>
+        /* Minimal CSS voor above-the-fold content */
+        :root {
+            --primary-color: #2a66a1;
+            --text-color: #1f2937;
+            --light-gray: #f9fafb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Skip link voor toegankelijkheid */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Header styling */
+        header {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+    </style>
+
+    <!-- Externe CSS (async geladen) -->
+    <link rel="stylesheet" href="css/index.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/navbar.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/diensten.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/over.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/contact.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/index.css"></noscript>
+</head>
+<body>
+<!-- Skip to content link voor toegankelijkheid -->
+<a href="#main-content" class="skip-link">Spring naar hoofdinhoud</a>
+
+<!-- Header -->
+<header role="banner">
+    <div class="container">
+        <!-- Logo -->
+        <a href="/" aria-label="Homepage">
+            <img src="media/logosite.jpeg" alt="Logo" width="150" height="50" loading="eager">
+        </a>
+
+        <!-- Navigatie -->
+        <nav aria-label="Hoofdnavigatie">
+            <button class="mobile-menu-button" aria-expanded="false" aria-controls="main-menu">
+                <span class="sr-only">Menu</span>
+                ☰
+            </button>
+
+            <ul id="main-menu" role="menubar">
+                <li role="none"><a href="#" role="menuitem">Home</a></li>
+                <li role="none"><a href="#diensten" role="menuitem">Diensten</a></li>
+                <li role="none"><a href="#over-ons" role="menuitem">Over Ons</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section aria-labelledby="hero-title" class="hero">
+        <div class="container">
+            <h1 id="hero-title">Meesters in detail</h1>
+            <p>Wij bieden oplossingen die uw bedrijf naar een hoger niveau tillen met bewezen resultaten.</p>
+            <a href="#contact" class="cta-button">Neem contact op</a>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="diensten" class="diensten-sectie">
+        <div class="container">
+            <div class="sectie-header">
+                <h2>Onze Premium Detailing Diensten</h2>
+                <p class="sectie-beschrijving">Elke auto verdient de beste behandeling. Kies uit onze uitgebreide range aan professionele detailing services.</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <!-- Wash Exterieur Detail -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <h3 class="service-name">Wash Exterieur Detail</h3>
+                        <div class="price">€45*</div>
+                        <div class="price-note">Perfecte basisreiniging</div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li>Snowfoam behandeling</li>
+                            <li>Velgen reiniging</li>
+                            <li>Wielkasten schoonmaken</li>
+                            <li>Met de hand wassen</li>
+                            <li>Professioneel afdrogen</li>
+                            <li>Banden shine</li>
+                        </ul>
+                        <div class="extra-info">
+                            <strong>Extra:</strong> Plasticdelen voeden €25
+                        </div>
+                    </div>
+                    <div class="card-cta">
+                        <button class="book-button" onclick="bookService('Wash Exterieur Detail')">Boek Nu</button>
+                    </div>
+                </div>
+
+                <!-- Wash en Wax -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <h3 class="service-name">Wash en Wax</h3>
+                        <div class="price">€65*</div>
+                        <div class="price-note">Met beschermende waslaag</div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li>Snowfoam behandeling</li>
+                            <li>Velgen reiniging</li>
+                            <li>Wielkasten schoonmaken</li>
+                            <li>Met de hand wassen</li>
+                            <li>Professioneel afdrogen</li>
+                            <li>Banden shine</li>
+                            <li>Met de hand waxxen</li>
+                        </ul>
+                    </div>
+                    <div class="card-cta">
+                        <button class="book-button" onclick="bookService('Wash en Wax')">Boek Nu</button>
+                    </div>
+                </div>
+
+                <!-- Standaard Detail -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <div class="popular-badge">Populair</div>
+                        <h3 class="service-name">Standaard Detail</h3>
+                        <div class="price">€85*</div>
+                        <div class="price-note">Binnen & buiten perfect</div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li>Stofzuigen interieur</li>
+                            <li>Plastic delen reinigen</li>
+                            <li>Glas binnen en buiten</li>
+                            <li>Auto parfum</li>
+                            <li>Snowfoam behandeling</li>
+                            <li>Velgen reiniging</li>
+                            <li>Met de hand wassen</li>
+                            <li>Afdrogen</li>
+                        </ul>
+                        <div class="extra-info">
+                            <strong>Inclusief:</strong> 2-weken spray on wax<br>
+                            <strong>Extra:</strong> Handwax €25
+                        </div>
+                    </div>
+                    <div class="card-cta">
+                        <button class="book-button" onclick="bookService('Standaard Detail')">Boek Nu</button>
+                    </div>
+                </div>
+
+                <!-- 1 Staps Polijsten -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <div class="popular-badge">Populair</div>
+                        <h3 class="service-name">1 Staps Polijsten</h3>
+                        <div class="price">€200*</div>
+                        <div class="price-note">Fijne krasjes verwijderen</div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li>Snowfoam behandeling</li>
+                            <li>Velgen reiniging</li>
+                            <li>Wielkasten schoonmaken</li>
+                            <li>Met de hand wassen</li>
+                            <li>Kleien van de lak</li>
+                            <li>Afdrogen</li>
+                            <li>1 Staps excentrisch polijsten</li>
+                            <li>2-weken spray on wax</li>
+                            <li>Banden shine</li>
+                        </ul>
+                    </div>
+                    <div class="card-cta">
+                        <button class="book-button" onclick="bookService('1 Staps Polijsten')">Boek Nu</button>
+                    </div>
+                </div>
+
+                <!-- 2 Staps Polijsten -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <!--    <div class="recommended-badge">Aanbevolen</div> -->
+                            <h3 class="service-name">2 Staps Polijsten</h3>
+                            <div class="price">€325*</div>
+                            <div class="price-note">Diepe glans & bescherming</div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="features-list">
+                                <li>Snowfoam behandeling</li>
+                                <li>Velgen reiniging</li>
+                                <li>Wielkasten schoonmaken</li>
+                                <li>Met de hand wassen</li>
+                                <li>Kleien van de lak</li>
+                                <li>Afdrogen</li>
+                                <li>1 Stap roterend polijsten</li>
+                                <li>2de Stap excentrisch polijsten</li>
+                                <li>2-weken spray on wax</li>
+                                <li>Banden shine</li>
+                            </ul>
+                        </div>
+                        <div class="card-cta">
+                            <button class="book-button" onclick="bookService('2 Staps Polijsten')">Boek Nu</button>
+                        </div>
+                    </div>
+
+                    <!-- 3 Staps Polijsten -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <h3 class="service-name">3 Staps Polijsten</h3>
+                        <div class="price">€425*</div>
+                        <div class="price-note">Ultieme lakcorrectie</div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li>Snowfoam behandeling</li>
+                            <li>Velgen reiniging</li>
+                            <li>Wielkasten schoonmaken</li>
+                            <li>Met de hand wassen</li>
+                            <li>Kleien van de lak</li>
+                            <li>3-staps polijstproces</li>
+                            <li>2-weken spray on wax</li>
+                            <li>Banden shine</li>
+                        </ul>
+                        <div class="extra-info">
+                            <strong>Bonus:</strong> Gratis exterieur detail na een maand
+                        </div>
+                    </div>
+                    <div class="card-cta">
+                        <button class="book-button" onclick="bookService('3 Staps Polijsten')">Boek Nu</button>
+                    </div>
+                </div>
+
+                <!-- Interieur Diepreinigen -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <div class="popular-badge">Populair</div>
+                        <h3 class="service-name">Interieur Diepreinigen</h3>
+                        <div class="price">€120*</div>
+                        <div class="price-note">Als nieuw van binnen</div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li>Complete stofzuigen</li>
+                            <li>Stomen van bekleding</li>
+                            <li>Bekleding diepreinigen</li>
+                            <li>Plastic delen reinigen</li>
+                            <li>Ramen perfect schoon</li>
+                            <li>Autoparfum</li>
+                        </ul>
+                        <div class="extra-info">
+                            <strong>Extra's:</strong><br>
+                            • Leer behandeling: €25<br>
+                            • Dierenharen: vanaf €35
+                        </div>
+                    </div>
+                    <div class="card-cta">
+                        <button class="book-button" onclick="bookService('Interieur Diepreinigen')">Boek Nu</button>
+                    </div>
+                </div>
+
+                <!-- Showroom Klaar -->
+                <div class="service-card">
+                    <div class="card-header">
+                        <div class="premium-badge">Premium</div>
+                        <h3 class="service-name">Showroom Klaar</h3>
+                        <div class="price">€500*</div>
+                        <div class="price-note">Absolute topklasse</div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li>Volledige interieur diepreiniging</li>
+                            <li>Volledig 3 staps polijsten</li>
+                            <li>Plastic delen voeden</li>
+                            <li>Wielen eraf voor perfecte detail</li>
+                            <li>Met de hand waxxen</li>
+                            <li>Showroom kwaliteit garantie</li>
+                        </ul>
+                    </div>
+                    <div class="card-cta">
+                        <button class="book-button premium-btn" onclick="bookService('Showroom Klaar')">Premium Boeking</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Onderhoud & Extras Sectie -->
+            <div class="maintenance-section">
+                <h3 class="section-title">Terugkerend Onderhoud & Extra's</h3>
+
+                <!-- Maandelijks Onderhoud -->
+                <div class="maintenance-card">
+                    <div class="maint-header">
+                        <h4>Maandelijks Onderhoud</h4>
+                        <div class="maint-price">€60*</div>
+                    </div>
+                    <div class="maint-body">
+                        <ul class="maint-features">
+                            <li>Stofzuigen</li>
+                            <li>Plastic delen reinigen</li>
+                            <li>Glas binnen en buitenkant schoon</li>
+                            <li>Auto parfum</li>
+                            <li>Snowfoam</li>
+                            <li>Velgen</li>
+                            <li>Wielkasten</li>
+                            <li>Met de hand wassen</li>
+                            <li>Afdrogen</li>
+                            <li>2-weken spray on wax</li>
+                        </ul>
+                        <div class="maint-note">
+                            Auto met de hand waxxen: €25 extra
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extras -->
+                <div class="extras-section">
+                    <h4 class="extras-title">Extra's</h4>
+                    <div class="extras-grid">
+                        <div class="extra-item">
+                            <div class="extra-name">Dierenharen verwijderen</div>
+                            <div class="extra-price">€35*</div>
+                        </div>
+                        <div class="extra-item">
+                            <div class="extra-name">Plastic delen voeden</div>
+                            <div class="extra-price">€20*</div>
+                        </div>
+                        <div class="extra-item">
+                            <div class="extra-name">Velgen polijsten</div>
+                            <div class="extra-price">€100*</div>
+                        </div>
+                        <div class="extra-item">
+                            <div class="extra-name">Kleien</div>
+                            <div class="extra-price">€20*</div>
+                        </div>
+                        <div class="extra-item">
+                            <div class="extra-name">Motoruimte Detailen</div>
+                            <div class="extra-price">€40*</div>
+                        </div>
+                        <div class="extra-item">
+                            <div class="extra-name">Koplampen restauratie</div>
+                            <div class="extra-price">€30 per stuk*</div>
+                        </div>
+                        <div class="extra-item">
+                            <div class="extra-name">Vloeistoffen aanvullen</div>
+                            <div class="extra-price">€12,50*</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prijsnotitie -->
+            <div class="price-note-footer">
+                <p>* Alle prijzen zijn vanaf, afhankelijk van de grote van het voertuig en de staat.</p>
+                <p>Contacteer ons voor een persoonlijke offerte op maat van uw auto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Over Ons Sectie -->
+    <section id="over-ons" class="over-ons-sectie">
+        <div class="container">
+            <div class="over-ons-grid">
+                <!-- Foto kolom -->
+                <div class="over-ons-foto">
+                    <img src="media/jordy-profielfoto.jpg" alt="Jordy Jonkman - Eigenaar JMJ Cardetailing" loading="lazy">
+                    <div class="foto-overlay">
+                        <div class="foto-text">
+                            <span>Jordy Jonkman</span>
+                            <small>Eigenaar & Autodetail Specialist</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tekst kolom -->
+                <div class="over-ons-content">
+                    <div class="sectie-header">
+                        <h2>Over JMJ Cardetailing</h2>
+                        <p class="sectie-subtitle">Passie voor perfectie, liefde voor auto's</p>
+                    </div>
+
+                    <div class="over-ons-text">
+                        <p class="intro">
+                            Mijn naam is <strong>Jordy Jonkman</strong>, eigenaar van JMJ Cardetailing en autoliefhebber.
+                            Al sinds jonge leeftijd bezoek ik racebanen, waar mijn liefde voor auto's is ontstaan.
+                        <br>
+                        <br>
+                            Deze passie heb ik door de jaren heen gecombineerd met mijn interesse in het
+                            schoonmaken en verzorgen van auto's - zo is JMJ Cardetailing ontstaan.
+                        <br>
+                        <br>
+                            Wat ooit begon met twee emmers, wat zeep en een droogdoek, is uitgegroeid tot een
+                            professioneel bedrijf met een arsenaal aan poets- en detailingsproducten.
+                        </p>
+
+                        <div class="highlight-box">
+                            <div class="highlight-icon">📍</div>
+                            <div class="highlight-content">
+                                <h4>Mobiele Service</h4>
+                                <p>
+                                    Ik kom aan huis in de stad <strong>Delfzijl</strong> en in omliggende dorpen om
+                                    uw auto tot in perfectie te detailen.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box">
+                            <div class="highlight-icon">🚗</div>
+                            <div class="highlight-content">
+                                <h4>Flexibele Opties</h4>
+                                <p>
+                                    Woont u iets verder weg? Stuur gerust een berichtje dan laat ik u snel weten
+                                    wat de mogelijkheden zijn. Ook is het mogelijk om de auto bij mij te brengen.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Kernwaarden
+                        <div class="core-values">
+                            <h4>Onze Kernwaarden</h4>
+                            <div class="values-grid">
+                                <div class="value-item">
+                                    <div class="value-icon">✨</div>
+                                    <h5>Passie</h5>
+                                    <p>Autoliefde die je ziet in elk detail</p>
+                                </div>
+                                <div class="value-item">
+                                    <div class="value-icon">🎯</div>
+                                    <h5>Precisie</h5>
+                                    <p>Perfectionisme in elke handeling</p>
+                                </div>
+                                <div class="value-item">
+                                    <div class="value-icon">🤝</div>
+                                    <h5>Betrouwbaarheid</h5>
+                                    <p>Afspraak is afspraak, kwaliteit gegarandeerd</p>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+
+                    <!-- CTA voor over ons -->
+                    <div class="over-ons-cta">
+                        <p>Wil je meer weten over mijn werkwijze of heb je vragen?</p>
+                        <a href="#contact" class="cta-button">Stel je vraag</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Echt HTML Formulier -->
+    <div class="contact-formulier">
+        <div class="form-header">
+            <h3>Direct een bericht sturen</h3>
+            <p>Vul het formulier in en we nemen contact met je op</p>
+        </div>
+
+        <!-- HTML Formulier dat naar Google Form gaat -->
+        <form id="contactForm" class="custom-form"
+              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8M9YYbFG0v_M4E5AZ9-8MoZhoG5loadWA-b7ICbSzDruWGQ/formResponse"
+              method="POST"
+              target="hidden_iframe"
+              onsubmit="submitted=true;">
+
+            <!-- Hidden fields voor Google Form -->
+            <input type="hidden" name="fvv" value="1">
+            <input type="hidden" name="pageNumber" value="0">
+            <input type="hidden" name="fbzx" value="YOUR_FORM_ID_HERE">
+
+            <!-- Naam velden -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="voornaam" class="form-label">
+                        Voornaam <span class="required">*</span>
+                    </label>
+                    <input type="text"
+                           id="voornaam"
+                           name="entry.2026158774"  <!-- Google Forms field ID -->
+                    class="form-input"
+                    placeholder="Jouw voornaam"
+                    required
+                    autocomplete="given-name">
+                    <div class="form-error" id="voornaam-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="achternaam" class="form-label">
+                        Achternaam <span class="required">*</span>
+                    </label>
+                    <input type="text"
+                           id="achternaam"
+                           name="entry.1129078119"  <!-- Google Forms field ID -->
+                    class="form-input"
+                    placeholder="Jouw achternaam"
+                    required
+                    autocomplete="family-name">
+                    <div class="form-error" id="achternaam-error"></div>
+                </div>
+            </div>
+
+            <!-- Contact velden -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="telefoon" class="form-label">
+                        Telefoonnummer <span class="required">*</span>
+                    </label>
+                    <input type="tel"
+                           id="telefoon"
+                           name="entry.192733829"  <!-- Google Forms field ID -->
+                    class="form-input"
+                    placeholder="06-12345678"
+                    required
+                    autocomplete="tel">
+                    <div class="form-error" id="telefoon-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        E-mailadres <span class="required">*</span>
+                    </label>
+                    <input type="email"
+                           id="email"
+                           name="entry.1293100845"  <!-- Google Forms field ID -->
+                    class="form-input"
+                    placeholder="jouw@email.nl"
+                    required
+                    autocomplete="email">
+                    <div class="form-error" id="email-error"></div>
+                </div>
+            </div>
+
+            <!-- Bericht veld -->
+            <div class="form-group">
+                <label for="bericht" class="form-label">
+                    Jouw bericht <span class="required">*</span>
+                </label>
+                <textarea id="bericht"
+                          name="entry.2005620554"  <!-- Vervang dit met je eigen bericht field ID! -->
+                class="form-textarea"
+                placeholder="Vertel ons over uw auto en wat u wenst..."
+                rows="5"
+                required></textarea>
+                <div class="form-error" id="bericht-error"></div>
+            </div>
+
+            <!-- Submit knop -->
+            <div class="form-submit-group">
+                <button type="submit" class="form-submit" id="submitButton">
+                    <span class="submit-text">📨 Verstuur naar Google Form</span>
+                    <span class="loading-spinner" style="display: none;">
+                    <div class="spinner"></div>
+                    Versturen...
+                </span>
+                </button>
+                <p class="form-note">Je wordt naar Google Forms doorverwezen</p>
+            </div>
+        </form>
+
+        <!-- Hidden iframe voor form submission -->
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+        <!-- Success/Error berichten -->
+        <div id="formSuccess" class="form-success" style="display: none;">
+            <div class="success-icon">✅</div>
+            <h4>Bedankt voor je bericht!</h4>
+            <p>We hebben je aanvraag ontvangen en nemen binnen 24 uur contact met je op.</p>
+            <button onclick="resetForm()" class="form-submit secondary-btn">
+                🆕 Nieuw bericht versturen
+            </button>
+        </div>
+
+        <div id="formError" class="form-error-message" style="display: none;">
+            <div class="error-icon">❌</div>
+            <h4>Er ging iets mis</h4>
+            <p>Probeer het opnieuw of bel ons direct op <a href="tel:+31611198050">06-11198050</a></p>
+            <button onclick="resetForm()" class="form-submit secondary-btn">
+                🔄 Opnieuw proberen
+            </button>
+        </div>
+
+        <!-- Directe link naar Google Form -->
+        <div class="google-form-link">
+            <p>Of open het formulier direct in Google Forms:</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8M9YYbFG0v_M4E5AZ9-8MoZhoG5loadWA-b7ICbSzDruWGQ/viewform"
+               target="_blank"
+               class="cta-button secondary-btn">
+                📝 Open Google Form in nieuw tabblad
+            </a>
+        </div>
+    </div>
+
+</main>
+
+<!-- Footer -->
+<footer role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Contact informatie -->
+            <address>
+                <h3>Contact</h3>
+                <p>Voorbeeldstraat 123<br>
+                    1234 AB Amsterdam<br>
+                    <a href="tel:+31123456789">+31 123 456 789</a><br>
+                    <a href="mailto:info@voorbeeld.nl">info@voorbeeld.nl</a>
+                </p>
+            </address>
+
+            <!-- Snelle links -->
+            <nav aria-label="Snelle links">
+                <h3>Snelle links</h3>
+                <ul>
+                    <li><a href="/privacy">Privacybeleid</a></li>
+                    <li><a href="/algemene-voorwaarden">Algemene voorwaarden</a></li>
+                    <li><a href="/sitemap">Sitemap</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social media -->
+            <div class="social">
+                <h3>Volg ons</h3>
+                <ul>
+                    <li><a href="https://linkedin.com" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="https://twitter.com" aria-label="Twitter">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; <span id="current-year">2024</span> JMJ Cardetailing. Alle rechten voorbehouden.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Externe JavaScript (aan einde van body) -->
+<script src="/js/main.js" defer></script>
+<script>// Contact form JavaScript voor Google Forms
+document.addEventListener('DOMContentLoaded', function() {
+    let formSubmitted = false;
+
+    const contactForm = document.getElementById('contactForm');
+    const submitButton = document.getElementById('submitButton');
+    const formSuccess = document.getElementById('formSuccess');
+    const formError = document.getElementById('formError');
+    const hiddenIframe = document.getElementById('hidden_iframe');
+
+    if (contactForm) {
+        // Form validatie functie
+        function validateForm() {
+            let isValid = true;
+            const errors = {};
+
+            // Voornaam
+            const voornaam = document.getElementById('voornaam');
+            if (!voornaam.value.trim()) {
+                errors.voornaam = 'Voornaam is verplicht';
+                isValid = false;
+            } else if (voornaam.value.trim().length < 2) {
+                errors.voornaam = 'Voornaam moet minimaal 2 tekens bevatten';
+                isValid = false;
+            }
+
+            // Achternaam
+            const achternaam = document.getElementById('achternaam');
+            if (!achternaam.value.trim()) {
+                errors.achternaam = 'Achternaam is verplicht';
+                isValid = false;
+            } else if (achternaam.value.trim().length < 2) {
+                errors.achternaam = 'Achternaam moet minimaal 2 tekens bevatten';
+                isValid = false;
+            }
+
+            // Telefoon
+            const telefoon = document.getElementById('telefoon');
+            const telefoonRegex = /^[\+]?[0-9\s\-\(\)]{8,}$/;
+            if (!telefoon.value.trim()) {
+                errors.telefoon = 'Telefoonnummer is verplicht';
+                isValid = false;
+            } else if (!telefoonRegex.test(telefoon.value.replace(/\s/g, ''))) {
+                errors.telefoon = 'Voer een geldig telefoonnummer in (bijv. 06-12345678)';
+                isValid = false;
+            }
+
+            // Email
+            const email = document.getElementById('email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.value.trim()) {
+                errors.email = 'E-mailadres is verplicht';
+                isValid = false;
+            } else if (!emailRegex.test(email.value)) {
+                errors.email = 'Voer een geldig e-mailadres in (bijv. naam@email.nl)';
+                isValid = false;
+            }
+
+            // Bericht
+            const bericht = document.getElementById('bericht');
+            if (!bericht.value.trim()) {
+                errors.bericht = 'Bericht is verplicht';
+                isValid = false;
+            } else if (bericht.value.trim().length < 10) {
+                errors.bericht = 'Bericht moet minimaal 10 tekens bevatten';
+                isValid = false;
+            }
+
+            // Toon errors
+            Object.keys(errors).forEach(field => {
+                const errorElement = document.getElementById(field + '-error');
+                if (errorElement) {
+                    errorElement.textContent = errors[field];
+                    errorElement.style.display = 'block';
+
+                    // Highlight het input veld
+                    const inputElement = document.getElementById(field);
+                    if (inputElement) {
+                        inputElement.style.borderColor = '#ef4444';
+                        inputElement.style.boxShadow = '0 0 0 3px rgba(239, 68, 68, 0.2)';
+                    }
+                }
+            });
+
+            // Verberg errors voor velden zonder error
+            ['voornaam', 'achternaam', 'telefoon', 'email', 'bericht'].forEach(field => {
+                if (!errors[field]) {
+                    const errorElement = document.getElementById(field + '-error');
+                    if (errorElement) {
+                        errorElement.style.display = 'none';
+                    }
+
+                    // Reset input styling
+                    const inputElement = document.getElementById(field);
+                    if (inputElement) {
+                        inputElement.style.borderColor = '';
+                        inputElement.style.boxShadow = '';
+                    }
+                }
+            });
+
+            return isValid;
+        }
+
+        // Real-time validatie
+        const formInputs = contactForm.querySelectorAll('input, textarea');
+        formInputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                validateForm();
+            });
+
+            input.addEventListener('input', function() {
+                const errorElement = document.getElementById(this.id + '-error');
+                if (errorElement) {
+                    errorElement.style.display = 'none';
+                    this.style.borderColor = '';
+                    this.style.boxShadow = '';
+                }
+            });
+        });
+
+        // Form verzending - Google Forms
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            if (!validateForm()) {
+                // Shake animation voor fouten
+                contactForm.style.animation = 'none';
+                setTimeout(() => {
+                    contactForm.style.animation = 'shake 0.5s ease';
+                }, 10);
+                return;
+            }
+
+            // Laad indicator tonen
+            submitButton.disabled = true;
+            submitButton.classList.add('form-submitting');
+
+            // Simuleer verzending naar Google Forms
+            setTimeout(() => {
+                // Verberg het formulier
+                contactForm.style.display = 'none';
+
+                // Toon success bericht
+                formSuccess.style.display = 'block';
+                formError.style.display = 'none';
+
+                // Scroll naar success bericht
+                formSuccess.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+
+                // Echt verzenden naar Google Forms in achtergrond
+                const formData = new FormData(contactForm);
+
+                // Verzend naar Google Forms
+                fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    mode: 'no-cors' // Google Forms accepteert geen CORS
+                }).catch(error => {
+                    console.log('Google Form submitted (no-cors mode)');
+                });
+
+                // Reset laad indicator
+                submitButton.disabled = false;
+                submitButton.classList.remove('form-submitting');
+
+                formSubmitted = true;
+
+            }, 1500); // Simuleer verzendingstijd
+        });
+
+        // Controleer of iframe geladen is (Google Forms response)
+        if (hiddenIframe) {
+            hiddenIframe.onload = function() {
+                if (formSubmitted) {
+                    // Formulier was verzonden, toon success
+                    contactForm.style.display = 'none';
+                    formSuccess.style.display = 'block';
+                    formError.style.display = 'none';
+
+                    submitButton.disabled = false;
+                    submitButton.classList.remove('form-submitting');
+                }
+            };
+
+            hiddenIframe.onerror = function() {
+                if (formSubmitted) {
+                    // Error bij verzending
+                    contactForm.style.display = 'none';
+                    formSuccess.style.display = 'none';
+                    formError.style.display = 'block';
+
+                    submitButton.disabled = false;
+                    submitButton.classList.remove('form-submitting');
+                }
+            };
+        }
+
+        // Auto-format telefoonnummer
+        const telefoonInput = document.getElementById('telefoon');
+        if (telefoonInput) {
+            telefoonInput.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+
+                if (value.length > 0) {
+                    if (value.length <= 2) {
+                        value = value;
+                    } else if (value.length <= 5) {
+                        value = value.slice(0, 2) + '-' + value.slice(2);
+                    } else if (value.length <= 8) {
+                        value = value.slice(0, 2) + '-' + value.slice(2, 5) + '-' + value.slice(5);
+                    } else {
+                        value = value.slice(0, 2) + '-' + value.slice(2, 5) + '-' + value.slice(5, 8) + value.slice(8, 10);
+                    }
+                }
+
+                e.target.value = value;
+            });
+        }
+    }
+
+    // Form reset functie
+    window.resetForm = function() {
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+        const formError = document.getElementById('formError');
+
+        if (contactForm) {
+            contactForm.reset();
+            contactForm.style.display = 'block';
+            contactForm.style.animation = '';
+        }
+        if (formSuccess) formSuccess.style.display = 'none';
+        if (formError) formError.style.display = 'none';
+
+        // Reset alle error states
+        const formInputs = document.querySelectorAll('.form-input, .form-textarea');
+        formInputs.forEach(input => {
+            input.style.borderColor = '';
+            input.style.boxShadow = '';
+            const errorElement = document.getElementById(input.id + '-error');
+            if (errorElement) errorElement.style.display = 'none';
+        });
+
+        formSubmitted = false;
+    };
+
+    // WhatsApp link klik tracking
+    const whatsappLink = document.querySelector('a[href*="wa.me"]');
+    if (whatsappLink) {
+        whatsappLink.addEventListener('click', function() {
+            console.log('WhatsApp contact geopend');
+        });
+    }
+
+    // Smooth scroll naar contact sectie
+    document.querySelectorAll('a[href="#contact"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Shake animation voor form errors
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+        }
+
+        .secondary-btn {
+            background: rgba(42, 102, 161, 0.1) !important;
+            color: var(--primary-color) !important;
+            border: 2px solid var(--primary-color) !important;
+            margin-top: 15px;
+        }
+
+        .secondary-btn:hover {
+            background: rgba(42, 102, 161, 0.2) !important;
+        }
+
+        .google-form-link {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(42, 102, 161, 0.05);
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(42, 102, 161, 0.1);
+        }
+
+        .google-form-link p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+    `;
+    document.head.appendChild(style);
+});
+</script>
+
+<!-- Inline JavaScript voor core functionaliteit -->
+<script>
+    // Current year voor copyright
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const mainMenu = document.getElementById('main-menu');
+
+    if (menuButton) {
+        menuButton.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            mainMenu.classList.toggle('active');
+        });
+    }
+
+    // Lazy loading polyfill voor oudere browsers
+    if ('loading' in HTMLImageElement.prototype) {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+            img.src = img.dataset.src;
+        });
+    }
+
+    // Performance monitoring
+    window.addEventListener('load', function() {
+        if (window.performance) {
+            const perfData = window.performance.timing;
+            const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+            console.log('Pagina laadtijd:', pageLoadTime, 'ms');
+        }
+    });
+</script>
+</body>
+</html>

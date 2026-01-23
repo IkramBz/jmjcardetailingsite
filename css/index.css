@@ -1,0 +1,165 @@
+/* Main Stylesheet */
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typografie */
+h1 { font-size: 2.5rem; line-height: 1.2; margin-bottom: 1rem; }
+h2 { font-size: 2rem; margin: 2rem 0 1rem; }
+h3 { font-size: 1.5rem; margin: 1.5rem 0 0.5rem; }
+p { margin-bottom: 1rem; }
+
+/* Header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+}
+
+/* Navigatie */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero */
+
+
+/* Hero sectie met achtergrondfoto */
+.hero {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),  /* Donkere overlay voor betere tekstleesbaarheid */
+            rgba(0, 0, 0, 0.4)
+    ), url('../media/redstation.png');  /* Jouw achtergrondfoto */
+
+    background-size: cover;           /* Bedekt hele gebied */
+    background-position: center;      /* Centreert de foto */
+    background-repeat: no-repeat;     /* Geen herhaling */
+    background-attachment: fixed;     /* Parallax effect (optioneel) */
+
+    color: white;                     /* Witte tekst op donkere achtergrond */
+    padding: 100px 0;                 /* Meer padding voor hero */
+    text-align: center;               /* Centreer tekst */
+    position: relative;
+    min-height: 80vh;                 /* Minimaal 80% van schermhoogte */
+    display: flex;
+    align-items: center;              /* Centreer verticaal */
+}
+.hero h1 {
+    color: white;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    background: white;
+    color: var(--primary-color);
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* FAQ */
+.faq {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer a {
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mobile-menu-button {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+}
+
+/* Print styles */
+@media print {
+    .cta-button,
+    .mobile-menu-button,
+    nav {
+        display: none !important;
+    }
+}
