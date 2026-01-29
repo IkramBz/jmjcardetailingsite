@@ -53,3 +53,35 @@ if('IntersectionObserver' in window) {
         imageObserver.observe(img);
     });
 }
+
+
+// In je main.js of in de <script> tag
+document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const mainMenu = document.getElementById('main-menu');
+
+    if (menuButton && mainMenu) {
+        menuButton.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            mainMenu.classList.toggle('active');
+
+            // Verander het hamburger icoon (optioneel)
+            if (!isExpanded) {
+                this.innerHTML = '<span class="sr-only">Menu sluiten</span> ✕';
+            } else {
+                this.innerHTML = '<span class="sr-only">Menu</span> ☰';
+            }
+        });
+
+        // Sluit menu als er op een link wordt geklikt
+        const menuLinks = mainMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mainMenu.classList.remove('active');
+                menuButton.setAttribute('aria-expanded', 'false');
+                menuButton.innerHTML = '<span class="sr-only">Menu</span> ☰';
+            });
+        });
+    }
+});
