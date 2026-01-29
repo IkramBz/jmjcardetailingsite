@@ -721,7 +721,6 @@
                 requiredFields.forEach(field => {
                     if (!field.value.trim()) {
                         isValid = false;
-                        field.style.borderColor = '#ef4444';
                     }
                 });
 
@@ -729,7 +728,6 @@
                 const email = document.getElementById('email');
                 if (email.value && !isValidEmail(email.value)) {
                     isValid = false;
-                    email.style.borderColor = '#ef4444';
                 }
 
                 return isValid;
@@ -895,10 +893,7 @@
             background: #1e4a75;
         }
 
-        .form-input:invalid,
-        .form-textarea:invalid {
-            border-color: #ef4444;
-        }
+
     `;
         document.head.appendChild(style);
     });

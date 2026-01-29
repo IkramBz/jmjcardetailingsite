@@ -792,7 +792,6 @@ iframe[name="hidden_iframe"] {
 /* Error states */
 .form-input:invalid,
 .form-textarea:invalid {
-    border-color: #ef4444 !important;
 }
 
 /* Shake animation */
